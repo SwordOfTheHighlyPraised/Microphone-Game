@@ -72,7 +72,7 @@ public class BulletSpawner : MonoBehaviour
         if (microphoneVolume > switchThreshold && playerValue >= maxPlayerValue/2)
         {
             SetBulletSize(bulletPrefab2, 200f);
-            playerValue -= maxPlayerValue/2;
+            playerValue -= 100f;
         }
         else
         {
@@ -106,7 +106,7 @@ public class BulletSpawner : MonoBehaviour
         {
             // Choose the appropriate bullet prefab based on microphone volume and player value.
             float microphoneVolume = microphoneInput.GetMicrophoneVolume();
-            if (microphoneVolume > switchThreshold && playerValue >= maxPlayerValue / 2)
+            if (microphoneVolume > switchThreshold && playerValue >= 100f)
             {
                 Instantiate(bulletPrefab2, transform.position + Vector3.right, Quaternion.identity);
             }

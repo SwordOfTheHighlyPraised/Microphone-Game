@@ -146,10 +146,10 @@ MonoBehaviour:
   maxBulletSize: 10
   sizeMultiplier: 15
   volumeThreshold: 0.1
-  switchThreshold: 1.5
+  switchThreshold: 2
   playerValue: 150
   maxPlayerValue: 150
-  valueRegenerationRate: 20
+  valueRegenerationRate: 13
   bulletPrefab1PlayerValue: 8
 --- !u!61 &7683500681663124891
 BoxCollider2D:
